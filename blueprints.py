@@ -53,7 +53,7 @@ if st.button('Send'):
         )
     client = OpenAI(api_key=api_key)
     response = client.chat.completions.create(
-        model='gpt-4o',
+        model='gpt-4o-mini',
         temperature=0.0,
         max_tokens=300,
         messages=[msg]
